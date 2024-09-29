@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Perguntas!</h1>
+    <hr>
+    <h3>Lista de perguntas:</h3>
+    <p>Nome: <%= nome %>
+    </p>
+    <p>Linguagem: <%= lang %>
+    </p>
+    <p>Empresa: <%= empresa %>
+    </p>
+    <p>Incritos: <%= inscritos %>
+    </p>
+    <hr>
+    <% if(msg==true){ %>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nesciunt dicta necessitatibus eaque
+            doloremque officia. Officia aspernatur culpa doloremque placeat, ratione id. Explicabo id quaerat nulla
+            neque, expedita mollitia. Facere!</p>
+
+            <img src="/img/DarkHole.jpg">
+        <% }else{ %>
+            <h3>Sem erro!</h3>
+            <%}%>
+
+                <% produtos.forEach(function(produto){ %>
+                    <hr>
+                    <h3>
+                        <%=produto.nome%>
+                    </h3>
+                    <h4>
+                        <%=produto.preco%>
+                    </h4>
+                    <% }) %>
+
+
+
+</body>
+
+</html>
